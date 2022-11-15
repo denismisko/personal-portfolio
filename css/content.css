@@ -1,0 +1,92 @@
+/* HLAVNE SEKCIE */
+
+.introduction {
+    
+   padding-left: 80px;
+
+   /* margin-bottom: 440px; */
+
+}
+
+.flexbox-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+/* ITEM 1 */
+
+.item1 {
+
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.item1 h3{
+
+    font-weight: normal;
+    margin-bottom: 40px;
+
+}
+
+.item1 p {
+
+    margin-bottom: 40px ;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+
+    padding-top: 40px;
+    
+}
+
+.social-icons a {
+    color: black;
+}
+
+.social {
+
+    margin-right: 20px ;
+
+}
+
+/* HOVERS */
+
+.tt:focus, 
+.tt:hover,
+.tt:active {
+        transition: all ease-in-out 1s;
+        color: #1da1f2;
+}
+
+.lin:focus, 
+.lin:hover,
+.lin:active {
+        transition: all ease-in-out 1s;
+        color: #006699;
+}
+
+/* BUTTON */
+
+.btn{
+
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #6c63ff;
+    padding: 20px 15px 20px 15px;
+    background: #6c63ff;
+}
+
+.btn:focus, 
+.btn:hover,
+.btn:active {
+        transition: all ease-in-out 1s;
+        background: #8a84fe;
+}
+
+/* ABOUT ME  */
+
