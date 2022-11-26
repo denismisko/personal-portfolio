@@ -1,10 +1,31 @@
+.settings {
+
+    line-height: 38px;
+    font-size: 20px;
+
+    margin-bottom: 200px;
+}
+
 /* HLAVNE SEKCIE */
 
 .introduction {
     
-   padding-left: 80px;
+   /* padding-left: 80px; */
 
-   /* margin-bottom: 440px; */
+   margin-bottom: 100px;
+
+}
+
+.scroll-down a {
+
+    color: black;
+}
+
+.scroll-down a:hover,
+.scroll-down a:focus,
+.scroll-down a:active {
+
+    color: #6c63ff;
 
 }
 
@@ -70,6 +91,13 @@
         color: #006699;
 }
 
+.btn:focus, 
+.btn:hover,
+.btn:active {
+        transition: all ease-in-out 1s;
+        background: #8a84fe;
+}
+
 /* BUTTON */
 
 .btn{
@@ -81,12 +109,141 @@
     background: #6c63ff;
 }
 
-.btn:focus, 
-.btn:hover,
-.btn:active {
-        transition: all ease-in-out 1s;
-        background: #8a84fe;
+/* ABOUT ME */
+
+.about-me p {
+    margin-bottom: 20px;
+    
 }
 
-/* ABOUT ME  */
+.about-me h2 {
+    
+    padding-bottom: 10px;
+   
+    font-weight: 800;
+}
 
+.btn1 {
+
+    color: black;
+    text-decoration: underline;
+}
+
+/* WORKS */
+
+.works h2 {
+    margin-bottom: 40px;
+}
+
+
+.works .headline  {
+    margin-bottom: 40px;
+}
+
+
+.flexbox-container-works {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+/* Obrazkovy hover nastavenie */
+
+.image {
+
+    position: relative;
+    margin-right: 40px;
+    width: 350px;
+}
+
+.image--img {
+
+    display: block;
+    width: 100%;
+    
+}
+
+.image--overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0,0.6);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+}
+
+.image--overlay > * {
+
+    transform: translateY(20px);
+
+    transition: transform 0.25s;
+
+}
+
+.image--overlay:hover {
+
+    opacity: 1;
+
+}
+
+.image--overlay--blur {
+
+    backdrop-filter: blur(5px);
+}
+
+/* .image--overlay--primary {
+
+    background: #006699;
+} */
+
+.image--overlay:hover > * {
+
+    transform: translateY(0);
+
+}
+
+.image--title a{
+
+    color: #ffff;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.image--description {
+
+    font-size: 1.00em;
+    margin-top: 0.25em;
+
+}
+
+/* SKILLS */
+
+.skills h2 {
+    margin-bottom: 40px;
+}
+
+/* BLOBZ */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

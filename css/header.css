@@ -1,6 +1,7 @@
 .main-header{
 
     margin-bottom: 200px;
+    
 }
 
 .menu {
@@ -19,8 +20,6 @@
     
     justify-content: center;
 
-    position: relative;
-    
 }
 
 .main-nav li {
@@ -38,11 +37,26 @@
 
     text-decoration: none;
 
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     font-size: 1em;
 
     letter-spacing: 0.077em;
+
+}
+
+.main-nav a:hover,
+.main-nav a:active,
+.main-nav a:focus {
+
+    color: #6c63ff;
+    transition: all ease-in-out 1s;
+}
+
+.li-btn a{
+
+    border: 1px solid black;
+    padding: 15px;
 
 }
 
@@ -58,7 +72,9 @@
 }
 
 .logo a {
-
-    color: black
+    
+    font-size: 20px;
+    color: black;
+    
 
 }

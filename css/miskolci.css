@@ -76,11 +76,14 @@ a {
 
 /* CONTAINER */
 
-
-
 .container {
 
     max-width: 1150px;
     margin: 0 auto;
 
+}
+
+ .about-me .container {
+
+    max-width: 850px;
 }
