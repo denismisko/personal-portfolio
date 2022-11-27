@@ -87,3 +87,32 @@ a {
 
     max-width: 850px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+
+    
+    .flexbox-container {
+        flex-direction: column;
+    }
+
+    .flexbox-container-works {
+        flex-direction: column;
+    }
+
+    .item1 {
+        margin-left: 40px;
+    }
+
+    .flexbox-container-works {
+        margin-left: 55px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+   
+
+}

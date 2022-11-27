@@ -1,5 +1,5 @@
 .main-footer  {
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .main-footer p,
@@ -8,9 +8,7 @@
 }
 
 .footer-flexbox {
-    display: flex;
-
-    
+    display: flex;  
 }
 
 .flex-item2 {
@@ -24,9 +22,6 @@
 .flex-item2 a:hover,
 .flex-item2 a:active,
 .flex-item2 a:focus {
-
     color: #6c63ff;
-
-    transition: all ease-in-out 1s;
 }
 
