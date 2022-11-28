@@ -35,7 +35,7 @@
     font-weight: normal;
     margin-bottom: 40px;
     font-size: 42px;
-    text-indent: 160px;
+    text-indent: 182px;
     letter-spacing: .3;
 }
 
@@ -61,6 +61,7 @@
     display: flex;
     flex-direction: column;
     
+    
 }
 
 @media screen and (max-width: 470px){
@@ -69,12 +70,14 @@
         flex-direction: row;
         
         justify-content: center;
-
+        
         margin-top: 40px;
     }
 
     .social-icons a {
         margin-left: 25px;
+
+        margin-right: 60px;
        
     }
     
