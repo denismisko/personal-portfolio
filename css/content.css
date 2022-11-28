@@ -7,30 +7,7 @@
 
 }
 
-
-
 /* HLAVNE SEKCIE */
-
-/* .introduction {
-    
-   padding-left: 80px; 
-
-   /margin-bottom: 100px; 
-
-} */
-
-/* .scroll-down a {
-
-    color: black;
-}
-
-.scroll-down a:hover,
-.scroll-down a:focus,
-.scroll-down a:active {
-
-    color: #6c63ff;
-
-} */
 
 .flexbox-container {
 
@@ -72,26 +49,66 @@
     .item1 {
         margin-bottom: 0;
     }
-    
+
 }
+
 
 /* SOCIAL ICONS */
 
 .social-icons {
+
     margin-left:40px ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 470px){
+
+    .social-icons{
+        flex-direction: row;
+        
+        justify-content: center;
+
+        margin-top: 40px;
+    }
+
+    .social-icons a {
+        margin-left: 25px;
+       
+    }
+    
 }
 
 .social-icons a {
-
+    
+    font-size: 30px;
     color: black;
     width: 48px;
     height: 48px;
     background: #6c63ff;
-    padding: 10px 10px 10px 10px;
+    
+    vertical-align: middle;
     border-radius: 50%;
-    line-height: 50px;
+    margin-top: 10px;
     
 }
+
+.gh {
+    padding-left: 9px;
+    padding-top: 10px;
+}
+
+.tt {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.lin {
+     padding-left: 11px;
+    padding-top: 10px;
+}
+
 /* HOVERS */
 .btn:focus, 
 .btn:hover,
@@ -104,7 +121,6 @@
 /* BUTTON */
 
 .btn{
-
     color:white ;
     text-transform: uppercase;
     border: 1px solid #6c63ff;
