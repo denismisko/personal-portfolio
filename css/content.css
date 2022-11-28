@@ -296,7 +296,7 @@
 }
 
 .disppear {
-    animation: vanish 3s forwards;
+    animation: vanish 1s forwards;
 }
 
 .spinner {
