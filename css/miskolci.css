@@ -90,6 +90,15 @@ a {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width:895px) {
+
+    .about-me {
+
+        margin-left: 30px;
+    }
+    
+}
+
 @media screen and (max-width: 800px) {
 
     
@@ -108,11 +117,5 @@ a {
     .flexbox-container-works {
         margin-left: 55px;
     }
-    
-}
-
-@media screen and (max-width: 500px) {
-    
-   
 
 }

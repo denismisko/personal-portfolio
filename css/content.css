@@ -3,9 +3,11 @@
     line-height: 38px;
     font-size: 20px;
 
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
 
 }
+
+
 
 /* HLAVNE SEKCIE */
 
@@ -13,11 +15,11 @@
     
    /* padding-left: 80px; */
 
-   margin-bottom: 100px;
+   /* margin-bottom: 100px; */
 
 }
 
-.scroll-down a {
+/* .scroll-down a {
 
     color: black;
 }
@@ -28,106 +30,107 @@
 
     color: #6c63ff;
 
-}
+} */
 
 .flexbox-container {
 
     display: flex;
-
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 /* ITEM 1 */
 
 .item1 {
-
-    line-height: 36px;
+    line-height: 80px;
     font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.item1 h2 {
+    font-size: 60px;
+    letter-spacing: 1px;
 }
 
 .item1 h3{
-
     font-weight: normal;
     margin-bottom: 40px;
-
+    font-size: 42px;
+    text-indent: 160px;
+    letter-spacing: .3;
 }
 
-.item1 p {
+@media screen and (max-width: 730px) {
 
-    margin-bottom: 40px ;
+    .item1 h2 {
+        font-size: 60px;
+    }
+
+    .item1 h3{
+
+        text-indent: 0px;
+    }
+
+    .item1 {
+        margin-bottom: 0;
+    }
+    
 }
 
 /* SOCIAL ICONS */
 
 .social-icons {
-
-    padding-top: 40px;
-    
+    margin-left:40px ;
 }
 
 .social-icons a {
+
     color: black;
+    width: 48px;
+    height: 48px;
+    background: #6c63ff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    line-height: 50px;
+    
 }
-
-.social {
-
-    margin-right: 20px ;
-
-}
-
 /* HOVERS */
-
-.tt:focus, 
-.tt:hover,
-.tt:active {
-        transition: all ease-in-out 1s;
-        color: #1da1f2;
-}
-
-.lin:focus, 
-.lin:hover,
-.lin:active {
-        transition: all ease-in-out 1s;
-        color: #006699;
-}
-
 .btn:focus, 
 .btn:hover,
 .btn:active {
-        transition: all ease-in-out 1s;
-        background: #8a84fe;
+        
+        background: transparent;
+        color: #6c63ff;
 }
 
 /* BUTTON */
 
 .btn{
 
-    color: white;
+    color:white ;
     text-transform: uppercase;
     border: 1px solid #6c63ff;
-    padding: 20px 15px 20px 15px;
-    background: #6c63ff;
+    padding: 20px 50px 20px 50px;
+    background:#6c63ff;
 }
 
 /* ABOUT ME */
+
+.about-me {
+    margin-bottom: 40px;
+}
 
 .about-me p {
     margin-bottom: 20px;
     
 }
-
 .about-me h2 {
     
     padding-bottom: 10px;
    
     font-weight: 800;
-}
-
-.btn1 {
-
-    color: black;
-    text-decoration: underline;
 }
 
 /* WORKS */
@@ -136,11 +139,9 @@
     margin-bottom: 40px;
 }
 
-
 .works .headline  {
     margin-bottom: 40px;
 }
-
 
 .flexbox-container-works {
 
@@ -234,8 +235,12 @@
 
 /* SKILLS */
 
+.skills {
+        padding-bottom: 50px;
+}
 .skills h2 {
     margin-bottom: 40px;
+    
 }
 
 /* ANIMATIONS */
@@ -334,6 +339,3 @@
   }
 
 }
-
-
-

@@ -62,3 +62,16 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+// AUTO TYPE
+
+var typed = new Typed(".auto-type", {
+strings: ["Web developer", "Web designer", "Coffee lover"],
+typeSpeed: 100,
+backSpeed: 100,
+loop:true
+});
+
+
+

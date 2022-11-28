@@ -18,8 +18,10 @@
 
     display: flex;
     
-    justify-content: center;
+    justify-content: flex-end;
 
+    margin-right: 40px;
+    
 }
 
 .main-nav li {
@@ -74,7 +76,7 @@
 
 .logo a {
     
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     
 }
