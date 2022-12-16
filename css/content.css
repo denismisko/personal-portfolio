@@ -169,6 +169,21 @@
 
 /* WORKS */
 
+.works img {
+    width: 350px;
+    
+}
+
+@media screen and (max-width: 351px) {
+
+    .works img {
+        width: 300px;
+        padding-left: 60px;
+    }
+    
+}
+
+
 .works h2 {
     margin-bottom: 40px;
 }
