@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denis Miškolci | Contact</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/miskolci.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/subpages.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+         <p><a href="index.html">X</a></p>
+
+    </header>
+
+    <main>
+
+          <section class="settings hidden">
+
+            <article>
+
+                <div class="container flexbox-contact">
+
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <p class="text-center">i will message you back as soon as possible.</p>
+                    <h3 class="text-center">Get into touch.</h3>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                    <span id="name-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" placeholder="Tel. number (without prefix)" id="contact-phone" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>   
+
+                <div class="input-group">
+                    <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                </div>
+
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+   
+                </form>
+
+               <div class="features">
+                    <h3><i class="fa-solid fa-house"></i>Adress</h3>
+                    <p>Považská 464/28</p>
+                    <p class="bottom">Košice 040 11</p>
+
+                    <div class="bottom">
+                        <h3><i class="fa-solid fa-envelope"></i>Email</h3>
+                        <a href="mailto:denismiskolci99@gmail.com">denismiskolci99@gmail.com</a>
+                    </div>
+
+                    <div >
+                    
+                    <h3><i class="fa-solid fa-phone"></i>Tel. number</h3>
+                    <a href="tel:+421 950 861 649">0950 861 649</a>
+                
+                </div>
+
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+<script src="https://kit.fontawesome.com/6b4c4d213a.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+<script src="./js/app.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "denismiskolci99@gmail.com",
+        Password : "DFEBBE6240E94221C8FABDD5C5286B8800AE",
+        To : "hhhdfdfdf@gmail.com",
+        From : document.getElementById("contact-email").value,
+        Subject : "New contact",
+        Body :  "Name: " + document.getElementById("contact-name").value
+                + "<br> Email : " + document.getElementById("contact-email").value
+                + "<br> Phone number: " + document.getElementById("contact-phone").value
+                + "<br> Message: " + document.getElementById("contact-message").value
+    }).then(
+        message => alert("Message sent succesfully")
+    );
+        
+    }
+</script>
+</body>
+</html>

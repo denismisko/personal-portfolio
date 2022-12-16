@@ -10,12 +10,6 @@ const observer = new IntersectionObserver((entries) => {
             
         }
 
-        else {
-
-            entry.target.classList.remove('show')
-
-        }
-
     });
 
 });
@@ -27,7 +21,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // LOADER
 
-var loader = document.querySelector(".loader");
+const loader = document.querySelector(".loader");
 
 window.addEventListener("load" , vanish);
 
@@ -66,9 +60,9 @@ function closeMenu() {
 
 // AUTO TYPE
 
-var typed = new Typed(".auto-type", {
+const typed = new Typed(".auto-type", {
 strings: ["Web developer", "Web designer", "Coffee lover"],
-typeSpeed: 100,
+typeSpeed: 20,
 backSpeed: 100,
 loop:true
 });

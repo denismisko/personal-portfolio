@@ -13,3 +13,157 @@
     top:0px;
     right:0px;
 }
+
+/* FORMULAR */
+.container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+
+form h3 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+form p {
+    font-size: 20px;
+
+}
+
+.input-group{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 10px 0;
+    position: relative;
+
+}
+
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 17px;
+}
+::placeholder{
+    font-size: 15px;
+}
+
+.input-group span {
+
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+
+}
+
+form button{
+    background: #6c63ff;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+form button:hover,
+form button:active,
+form button:focus {
+
+    background: transparent;
+        color: #6c63ff;
+        border: 1px solid #6c63ff;
+}
+
+#submit-error {
+    color: red;
+}
+
+#submit-error i {
+    color: green;
+}
+
+.input-group span i {
+
+    color: green;
+
+}
+
+.flexbox-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+/* que */
+
+@media screen and (max-width: 790px) {
+
+    .flexbox-contact {
+        flex-direction: column;
+    }
+
+    .features {
+        margin: 0;
+    }
+
+}
+
+/* FEATURES */
+
+.features {
+    margin-left:40px ;
+    
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .features {
+        padding-top: 48px;
+        margin-bottom: 48px;
+    }
+
+}
+
+.features h3 i {
+    padding:13px;
+    color: #6c63ff ;
+    border: 1px solid #6c63ff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.features h3 {
+    padding-bottom: 10px;
+}
+
+.features a {
+    color: black;
+}

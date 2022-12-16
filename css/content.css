@@ -52,14 +52,35 @@
 
 }
 
+
+@media screen and (max-width: 355px) {
+
+    .item1 h3{
+        font-size: 30px;
+        text-indent: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 306px) {
+
+    .item1 h3{
+        font-size: 28px;
+        text-indent: 0px;
+    }
+
+}
+
+
 /* SOCIAL ICONS */
 
 .social-icons {
 
-    margin-left:40px ;
+    margin-left:40px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 @media screen and (max-width: 470px){
@@ -84,32 +105,27 @@
 
 .social-icons a {
     
-    font-size: 30px;
+    font-size: 27px;
+
     color: black;
-    width: 48px;
-    height: 48px;
+
+    width: 42px;
+    height: 42px;
     background: #6c63ff;
     
-    vertical-align: middle;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 15px;
+
+    padding: 0.11em 0.29em;
     
-}
-
-.gh {
-    padding: 9px;
-    padding-top: 10px;
-}
-
-.tt {
-    padding: 10px;
-    padding-top: 10px;
 }
 
 .lin {
-     padding: 10px;
-    padding-top: 10px;
+
+    padding-left: 0.06em;
+
 }
+
 
 /* HOVERS */
 .btn:focus, 
@@ -147,6 +163,10 @@
     font-weight: 800;
 }
 
+/* .about-me p:first-child {
+    margin: 0
+} */
+
 /* WORKS */
 
 .works h2 {
@@ -162,6 +182,8 @@
     display: flex;
 
     justify-content: center;
+
+    align-items: center;
 }
 
 /* Obrazkovy hover nastavenie */

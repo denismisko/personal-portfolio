@@ -4,6 +4,15 @@
     
 }
 
+@media screen and (max-width: 450px) {
+
+    .main-header {
+
+         margin-bottom: 150px;
+    }
+
+}
+
 .menu {
     
     list-style: none;
@@ -52,7 +61,7 @@
 .main-nav a:focus {
 
     color: #6c63ff;
-    /* transition: all ease-in-out 1s; */
+    transition: all ease-in-out .3s;
 }
 
 .li-btn a{
