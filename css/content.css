@@ -247,7 +247,9 @@
 
 }
 
-.image--overlay:hover {
+.image--overlay:hover,
+.image--overlay:active,
+.image--overlay:focus {
 
     opacity: 1;
 
@@ -263,7 +265,9 @@
     background: #006699;
 } */
 
-.image--overlay:hover > * {
+.image--overlay:hover > *,
+.image--overlay:focus > *,
+.image--overlay:active > * {
 
     transform: translateY(0);
 

@@ -17,7 +17,7 @@ function validateName(){
 
     if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
-        nameError.innerHTML = 'Write full name';
+        nameError.innerHTML = 'Full name';
         return false;
         
     }
@@ -33,14 +33,14 @@ function validatePhone(){
 
     if (phone.length == 0) {
 
-        phoneError.innerHTML = 'Phone no is required';
+        phoneError.innerHTML = 'Required';
         return false;
         
     }
 
     if (phone.length !== 10) {
 
-        phoneError.innerHTML = 'Phone must have 10 digts';
+        phoneError.innerHTML = '10 digits';
         return false;
         
     }
@@ -64,14 +64,14 @@ function validateEmail(){
 
     if (email.length == 0) {
 
-        emailError.innerHTML = 'Email is required';
+        emailError.innerHTML = 'Required';
         return false;
         
     }
 
     if (!email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/)) {
 
-        emailError.innerHTML = 'Email Invalid';
+        emailError.innerHTML = 'Invalid';
         return false;
 
     }
